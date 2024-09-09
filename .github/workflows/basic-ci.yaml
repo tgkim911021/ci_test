@@ -98,7 +98,7 @@ jobs:
           docker buildx build . \
             --platform linux/amd64  \
             --push \
-            -t ${{ env.REGISTRY }}/${{ github.actor }}/practice/${{ env.PROJECT_DIR }}:latest
+            -t ${{ env.REGISTRY }}/${{ github.actor }}/practice_ci/${{ env.PROJECT_DIR }}:latest
 
   # deploy:
   #   runs-on: ubuntu-latest
