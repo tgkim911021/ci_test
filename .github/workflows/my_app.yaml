@@ -8,7 +8,8 @@ on:
       - "my_app/**"
 
 env:
-  PACKAGE: ci_test
+  PACKAGE: practice-ci
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -64,7 +65,8 @@ jobs:
       - name: Log into registry
         uses: docker/login-action@v3
         with:
-          registry: ${{ env.REGISTRY }}
+          # registry: ${{ env.REGISTRY }}
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_TOKEN }}
 
