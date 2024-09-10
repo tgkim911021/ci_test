@@ -8,8 +8,7 @@ on:
       - "my_app/**"
 
 env:
-  PACKAGE: practice-ci
-
+  PACKAGE: ci_test
 jobs:
   test:
     runs-on: ubuntu-latest
