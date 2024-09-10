@@ -54,7 +54,7 @@ jobs:
       contents: read
       packages: write
     env:
-      PROJECT_DIR: my-app
+      PROJECT_DIR: my_app
 
     steps:
       - uses: actions/checkout@v2
